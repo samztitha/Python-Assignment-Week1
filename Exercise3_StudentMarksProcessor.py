@@ -74,9 +74,10 @@ try:
     for g, c in zip(grades, counts):
         print(f"Grade {g}: {c} student(s)")
 
-    print("\n✅ Processing complete. Results written to", output_file)
+    print("\n Processing complete. Results written to", output_file)
 
 except FileNotFoundError:
     print("Input file not found. Please check the file name.")
 except Exception as e:
     print("Unexpected error:", e)
+
